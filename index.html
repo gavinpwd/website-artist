@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio :: Irma Gustaityte</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">work</a>
+    <!-- <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contact</a> -->
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1><img src="images/logo-lt-ylw.png" alt="logo" width="175" height="125"></h1>
+        <h2>irma gustaityte calabrese</h2>
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showwork()">work</a>
+            <!-- <a onclick="showcontact()">contact</a> -->
+        </div>
+        <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fab fa-facebook"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"><i class="fab fa-instagram"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"><i class="fab fa-etsy"></i></a></td>
+                </tr>
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>Works</h1>
+        <section>
+            <!-- <h2>work title</h2> -->
+            <!-- <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p> -->
+            <div id="used">
+                <div><img src="images/logo-br-ylw.png" alt="logo" width="175" height="125"></div>
+                <div><img src="images/logo-br-ylw.png" alt="logo" width="175" height="125"></div>
+                <div><img src="images/logo-br-ylw.png" alt="logo" width="175" height="125"></div>
+                <div><img src="images/logo-br-ylw.png" alt="logo" width="175" height="125"></div>
+            </div>
+            <!-- <button class="btn_one">button 1</button>
+            <button class="btn_two">button 2</button> -->
+        </section>
+    </div>
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>About Me</h1>
+            <section>
+                <!-- <h2>about me</h2> -->
+                <p>
+                    Some form of magic happens when a felt tip of a pen touches the paper, and I start drawing a line when I read a script and think of a world for the characters to live in or when I look through a viewfinder to frame a photograph – it feels like my mind materialises and offers the outer world and people that surround me a glimpse into who I am. Making art can be a very personal and meditative experience, but I hope to leave a mark on humanity.
+                </p>
+                <p>
+                    There are moments when my mind overflows with thoughts, and I feel the urge to put them down on paper or make them into a model. As I grow older and life presents more complicated challenges, the artworks evolve.
+                </p>
+                <p>
+                    Movement, constant change in nature, human interaction, emotions, the afterlife – these themes are often present in my work. I enjoy creating artwork in solitude, but I also find the film- and theatre-making very rewarding where creative collaboration is required. Multiple discussions with directors, actors, cinematographers, art department transform the ideas into a new world where we can tell a story and make a statement.
+                </p>
+            </section>
+            <section>
+                <h2>My Skills</h2>
+                <p>
+                    Drawing. Photography. Painting.
+                </p>
+                <p>
+                    Theatre and Film Set Design. Interior Design. Jewellery and Object Design.
+                </p>
+            </section>
+        </div>
+          <div id="contact_container" class="container">
+            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+            <!-- <h1>contact.</h1>
+            <section>
+                <h2>contact me</h2>
+                <p>
+                    <form>
+                        <input type="text" placeholder="name" required>
+                        <input type="email" placeholder="email" required><br>
+                        <textarea placeholder="your message" required rows="5"></textarea><br>
+                        <button class="btn_one">send</button>
+                    </form> 
+                </p>
+            </section> -->
+        </div>
+        <!-- <div id="footer">
+            made on earth by a human <br> <a href="https://imfunniee.github.io">imfunniee</a>
+        </div> -->
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
